@@ -17,6 +17,7 @@
     flex-wrap: wrap;
 
 }
+
 .user-info:after{
     display: table;
     content: '';
