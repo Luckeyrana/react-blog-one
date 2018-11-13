@@ -7,8 +7,16 @@
     background-color: #fff;
     overflow: hidden;
 }
-.card .img-section{ margin-bottom: 30px; min-height: 300px; background-color: aqua}
 
+.hideCard{display:none}
+.card .img-section{ margin-bottom: 30px; min-height: 300px; background-color: aqua; }
+.bigImages{
+    display: block;
+    max-width:500px;
+    height:350px;
+    width: auto;
+
+}
 .user-info{
     position: relative;
     width: 100%;
@@ -26,7 +34,7 @@
 }
 
 .user-info .user{
-    width: calc(100% - 32px);
+    width: calc(100% - 50px);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

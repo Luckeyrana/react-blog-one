@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Cards from "./app/components/Card/Cards";
 
@@ -7,7 +6,7 @@ import Cards from "./app/components/Card/Cards";
 const data = [
     {
         id: 1,
-        image: '',
+        image: '/assets/images/img1.jpg',
         userImg: '',
         userName: 'Kawan',
         userDate: '20/20/2018',
@@ -17,7 +16,7 @@ const data = [
     },
     {
         id: 2,
-        image: '',
+        image: '/assets/images/img2.jpg',
         userImg: '',
         userName: 'Kawan',
         userDate: '20/20/2018',
@@ -27,7 +26,7 @@ const data = [
     },
     {
         id: 3,
-        image: '',
+        image: '/assets/images/img3.jpg',
         userImg: '',
         userName: 'Kawan',
         userDate: '20/20/2018',
@@ -37,7 +36,7 @@ const data = [
     },
     {
         id: 4,
-        image: '',
+        image: '/assets/images/img4.jpg',
         userImg: '',
         userName: 'Kawan',
         userDate: '20/20/2018',
@@ -47,7 +46,7 @@ const data = [
     },
     {
         id: 5,
-        image: '',
+        image: '/assets/images/img5.jpg',
         userImg: '',
         userName: 'Kawan',
         userDate: '20/20/2018',

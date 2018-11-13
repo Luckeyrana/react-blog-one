@@ -7,7 +7,8 @@ class Cards extends React.Component {
         this.state = {
             like: this.props.cardData.like,
             counter: 0,
-            text: 'Like'
+            text: 'Like',
+            class: 'card'
         }
 
     }
@@ -38,11 +39,25 @@ class Cards extends React.Component {
 
     }
 
+
+    hideBox = () => {
+        if (this.state.class === 'card'){
+            this.setState(
+                {
+                    class: 'hideCard'
+
+                }
+            )
+            alert("Are you sure, you want to remove the box having "+ this.state.like+ " likes?");
+        }
+    }
+
     render() {
         return (
-            <div className={'card'}>
+            <div className={this.state.class}>
                 <div className={'img-section'}>
-                    <img src={this.props.cardData.image} alt=""/>
+
+                    <img src={this.props.cardData.image} alt="s" className={'bigImages'} />
                 </div>
                 <div className={'user-info'}>
                     <div className="user">
@@ -55,7 +70,7 @@ class Cards extends React.Component {
                         </div>
                     </div>
                     <div className="button">
-                        i
+                        <button onClick={this.hideBox}>hide</button>
                     </div>
 
                 </div>
